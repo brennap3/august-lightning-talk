@@ -1,0 +1,414 @@
+SelecT * FROM CVE_CPe where CPEID LIKE '%mac_os_x%' AND CPEid LIKE '%apple%' order by CPEID;
+SelecT * FROM CVE_CPe where CPEID  in (  'cpe:/o:apple:mac_os_x:10.9');
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%microsoft:sql%' and CPEid LIKE '%windows%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%oracle%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%mongodb%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%postgre%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%ibm:db2:10%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%apache:cassandra%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%microsoft:access%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%sqlite%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%redis%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%elastic%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%tera%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%solr%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%hbase%' order by CPEID
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%filemaker%' order by CPEID
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%firefox%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%chrome%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%microsoft%' and CPEid LIKE '%internet%' order by CPEID;
+#
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%microsoft%' and CPEid LIKE '%edge%' order by CPEID;
+
+--cpe:/a:microsoft:edge
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%apple%' and CPEid LIKE '%safari%' order by CPEID;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%opera_web%';
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%:android%';
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID LIKE '%:apple:ios%';
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CPEID like '%apple:iphone_os%' order by cpeid;
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CpEID like '%:teradata%';
+
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CpEID like '%linux%' order by cpeid;
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CpEID like '%cpe:/o:linuxmint:linux_mint:17%';
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CpEID like '%o:debian%';
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CpEID like '%:canonical:ubuntu%'  order by cpeid;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CpEID like '%opensuse%'  order by cpeid;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CpEID like '%fedora%'  order by cpeid;
+
+SelecT DISTINCT(cpeid) FROM CVE_CPe where CpEID like '%centos%'  order by cpeid;
+
+
+SeLECT
+cveid,
+cvss_base,
+cvss_impact,
+cvss_exploit,
+cvss_access_vector,
+cvss_access_complexity,
+cvss_authentication,
+cvss_confidentiality_impact,
+cvss_integrity_impact,
+cvss_availability_impact
+FROM
+nvd_db
+;
+
+DROP VIeW IF eXISTS  V_vulnerability_Detail ;
+
+DROP TABLE IF eXISTS  T_vulnerability_detail ;
+
+CREATE TABLE T_vulnerability_detail
+AS
+SeLECT
+cveid,
+CASE  WHEN cvss_base == 'not_defined' THEN 0 ELSE cvss_base END as cvss_base,
+CASE  WHEN cvss_impact =='not_defined' THEN 0 ELSE cvss_impact END as cvss_impact,
+CASE  WHEN cvss_exploit =='not_defined' THEN 0 ELSE cvss_exploit END as cvss_exploit,
+CASE  WHEN cvss_access_vector=='network' THEN 1 ELSE 0 END as network_access,
+CASE  WHEN cvss_access_vector=='local' THEN 1 ELSE 0 END as local_access, 
+CASE  WHEN cvss_access_vector=='adjacent_network' THEN 1 ELSE 0 END as adjacent_network_access, 
+CASE  WHEN cvss_access_vector=='not_defined' THEN 1 ELSE 0 END as not_defined_network_access,
+CASE  WHEN cvss_access_complexity=='low' THEN 1 ELSE 0 END as low_access_complexity,
+CASE  WHEN cvss_access_complexity=='medium' THEN 1 ELSE 0 END as medium_access_complexity,
+CASE  WHEN cvss_access_complexity=='high' THEN 1 ELSE 0 END as high_access_complexity,
+CASE  WHEN cvss_access_complexity=='not_defined' THEN 1 ELSE 0 END as not_defined_access_complexity,
+CASE  WHEN cvss_authentication=='none' THEN 1 ELSE 0 END as none_cvss_authentication,
+CASE  WHEN cvss_authentication=='single_instance' THEN 1 ELSE 0 END as single_instance_cvss_authentication,
+CASE  WHEN cvss_authentication=='not_defined' THEN 1 ELSE 0 END as not_defined_instance_cvss_authentication,
+CASE  WHEN cvss_authentication=='multiple_instances' THEN 1 ELSE 0 END as multiple_instance_cvss_authentication,
+CASE  WHEN cvss_confidentiality_impact=='partial' THEN 1 ELSE 0 END as partial_confiidentiality_impact,
+CASE  WHEN cvss_confidentiality_impact=='none' THEN 1 ELSE 0 END as none_confiidentiality_impact,
+CASE  WHEN cvss_confidentiality_impact=='complete' THEN 1 ELSE 0 END as complete_confiidentiality_impact,
+CASE  WHEN cvss_confidentiality_impact=='not_defined' THEN 1 ELSE 0 END as not_defined_confiidentiality_impact,
+CASE  WHEN cvss_integrity_impact=='not_defined' THEN 1 ELSE 0 END as not_defined_cvss_integrity_impact,
+CASE  WHEN cvss_integrity_impact=='none' THEN 1 ELSE 0 END as none_cvss_integrity_impact,
+CASE  WHEN cvss_integrity_impact=='complete' THEN 1 ELSE 0 END as complete_cvss_integrity_impact,
+CASE  WHEN cvss_integrity_impact=='partial' THEN 1 ELSE 0 END as partial_cvss_integrity_impact,
+CASE  WHEN cvss_availability_impact=='not_defined' THEN 1 ELSE 0 END as not_defined_cvss_availability_impact,
+CASE  WHEN cvss_availability_impact=='partial' THEN 1 ELSE 0 END as partial_cvss_availability_impact,
+CASE  WHEN cvss_availability_impact=='complete' THEN 1 ELSE 0 END as complete_cvss_availability_impact,
+CASE  WHEN cvss_availability_impact=='none' THEN 1 ELSE 0 END as none_cvss_availability_impact
+FROM
+nvd_db
+;
+
+CREATE INDEX cve_idx_vuln_detail
+  ON T_vulnerability_detail (cveid);
+  
+CREATE INDEX cve_idx_cpecvemap
+  ON cve_cpe (cveid);
+
+DROP TABLE IF eXISTS  T_cpe_vulnerability_detail ;
+
+CREATE TABLE T_cpe_vulnerability_detail
+AS
+SeLECT
+CVE_CPE.cveid AS cveid,
+CVE_CPE.cpeid AS cpeid,
+cvss_base,
+cvss_impact,
+cvss_exploit,
+network_access,
+local_access, 
+adjacent_network_access, 
+not_defined_network_access,
+low_access_complexity,
+medium_access_complexity,
+high_access_complexity,
+not_defined_access_complexity,
+none_cvss_authentication,
+single_instance_cvss_authentication,
+not_defined_instance_cvss_authentication,
+multiple_instance_cvss_authentication,
+partial_confiidentiality_impact,
+none_confiidentiality_impact,
+complete_confiidentiality_impact,
+not_defined_confiidentiality_impact,
+not_defined_cvss_integrity_impact,
+none_cvss_integrity_impact,
+complete_cvss_integrity_impact,
+partial_cvss_integrity_impact,
+not_defined_cvss_availability_impact,
+partial_cvss_availability_impact,
+complete_cvss_availability_impact,
+none_cvss_availability_impact
+FROM T_vulnerability_detail JOIN cve_cpe on T_vulnerability_detail.cveid=cve_cpe.cveid
+;
+
+DROP INDEX IF EXISTS c_idx_cveid_T_cpe_vulnerability_detailp ;
+
+CREATE INDEX c_idx_cveid_T_cpe_vulnerability_detailp
+  ON T_vulnerability_detail (cveid);
+  
+DROP INDEX IF EXISTS c_idx_cpeid_T_cpe_vulnerability_detail;
+
+CREATE INDEX c_idx_cpeid_T_cpe_vulnerability_detail
+  ON cve_cpe (cpeid);
+ 
+--SeleCT * FROM V_vulnerability_Detail; 
+
+DROP TABLE IF EXISTS  T_cpe_vulnerability_agg;
+
+CREATE TABLE T_cpe_vulnerability_agg
+AS
+SELECT 
+	cpeid,
+	count(cveid) as cveid_cnt,
+	sum(cvss_base) as cvss_base_sum,
+	sum(cvss_impact) as cvss_impact_sum,
+	sum(cvss_exploit) as cvss_exploit_sum,
+	sum(network_access) as  network_access_sum,
+	sum(local_access) as local_access_sum,
+	sum(adjacent_network_access) as adjacent_network_access_sum,
+	sum(not_defined_network_access) as not_defined_network_access_sum,
+	sum(low_access_complexity) as low_access_complexity_sum,
+	sum(medium_access_complexity) as medium_access_complexity_sum,
+	sum(high_access_complexity) as high_access_complexity_sum,
+	sum(not_defined_access_complexity) as not_defined_access_complexity_sum,
+	sum(none_cvss_authentication) as none_cvss_authentication_sum,
+	sum(single_instance_cvss_authentication) as single_instance_cvss_authentication_sum,
+	sum(not_defined_instance_cvss_authentication) as not_defined_instance_cvss_authentication_sum,
+	sum(multiple_instance_cvss_authentication) as multiple_instance_cvss_authentication_sum,
+	sum(partial_confiidentiality_impact) as partial_confiidentiality_impact_sum,
+	sum(none_confiidentiality_impact) as none_confiidentiality_impact_sum,
+	sum(complete_confiidentiality_impact) as complete_confiidentiality_impact_sum,
+	sum(not_defined_confiidentiality_impact) as not_defined_confiidentiality_impact_sum,
+	sum(not_defined_cvss_integrity_impact) as not_defined_cvss_integrity_impact_sum,
+	sum(none_cvss_integrity_impact) as none_cvss_integrity_impact_sum,
+	sum(complete_cvss_integrity_impact) as complete_cvss_integrity_impact_sum,
+	sum(partial_cvss_integrity_impact) as partial_cvss_integrity_impact_sum,
+	sum(not_defined_cvss_availability_impact) as not_defined_cvss_availability_impact_sum,
+	sum(partial_cvss_availability_impact) as partial_cvss_availability_impact_sum,
+	sum(complete_cvss_availability_impact) as complete_cvss_availability_impact_sum,
+	sum(none_cvss_availability_impact) as none_cvss_availability_impact_sum 
+FROM T_cpe_vulnerability_detail  
+GROUP BY CPEID;
+
+PRAGMA table_info(map_cve_exploitdb);
+
+PRAGMA table_info(exploits);
+
+SELECT DISTINCT(TYPE) FROM EXPLOITS;
+
+/*
+remote
+local
+webapps
+dos
+shellcode
+*/
+
+DROP TABLE IF EXISTS  T_exploit_detail;
+
+CREATE TABLE T_exploit_detail
+AS
+SELECT 
+	id,
+	CASE  WHEN TYPE == 'remote' THEN 1 ELSE 0 END as REMOTE_EXPLOIT_TYPE,
+	CASE  WHEN TYPE == 'local' THEN 1 ELSE 0 END as LOCAL_EXPLOIT_TYPE,
+	CASE  WHEN TYPE == 'webapps' THEN 1 ELSE 0 END as WEBAPPS_EXPLOIT_TYPE,
+	CASE  WHEN TYPE == 'dos' THEN 1 ELSE 0 END as DOS_EXPLOIT_TYPE,
+	CASE  WHEN TYPE == 'shellcode' THEN 1 ELSE 0 END as SHELLCODE_EXPLOIT_TYPE
+FROM EXPLOITS;
+
+PRAGMA table_info(T_exploit_detail);
+
+PRAGMA table_info(map_cve_exploitdb);
+
+DROP TABLE IF EXISTS T_exploit_cve;
+
+CREATE TABLE T_exploit_cve
+AS
+SELECT 
+	id,
+	cveid,
+	REMOTE_EXPLOIT_TYPE,
+	LOCAL_EXPLOIT_TYPE,
+	WEBAPPS_EXPLOIT_TYPE,
+	DOS_EXPLOIT_TYPE,
+	SHELLCODE_EXPLOIT_TYPE
+FROM T_EXPLOIT_DETAIL JOIN map_cve_exploitdb on T_EXPLOIT_DETAIL.id=map_cve_exploitdb.exploitdbid;
+
+----
+----
+
+DROP TABLE IF EXISTS T_exploit_cve_cpe;
+
+CREATE TABLE T_exploit_cve_cpe
+AS
+SELECT 
+	id as exploitdbid,
+	cve_cpe.cveid as cveid,
+	cve_cpe.cpeid  as cpeid,
+	REMOTE_EXPLOIT_TYPE,
+	LOCAL_EXPLOIT_TYPE,
+	WEBAPPS_EXPLOIT_TYPE,
+	DOS_EXPLOIT_TYPE,
+	SHELLCODE_EXPLOIT_TYPE
+FROM T_exploit_cve JOIN cve_cpe on T_exploit_cve.cveid=cve_cpe.cveid;
+
+DROP TABLE IF EXISTS T_exploit_cve_cpe_agg;
+
+CREATE TABLE T_exploit_cve_cpe_agg
+AS
+SELECT 
+	cpeid,
+	count(exploitdbid) as exploit_cnt,
+	sum(REMOTE_EXPLOIT_TYPE) as remote_exploit_cnt,
+	sum(LOCAL_EXPLOIT_TYPE) as local_exploit_cnt,
+	sum(WEBAPPS_EXPLOIT_TYPE) as WEBAPPS_EXPLOIT_TYPE_cnt,
+	sum(DOS_EXPLOIT_TYPE) as DOS_EXPLOIT_TYPE_cnt,
+	sum(SHELLCODE_EXPLOIT_TYPE) as SHELLCODE_EXPLOIT_TYPE_cnt
+FROM T_exploit_cve_cpe
+GROUP BY cpeid;
+
+--SELECT * FROM T_exploit_cve_cpe_agg limit 20;
+
+--SELECT MAX(EXPLOIT_CNT) FROM  T_exploit_cve_cpe_agg; 
+
+--join T_exploit_cve_cpe_agg to T_cpe_vulnerability_agg
+
+DROP TABLE IF EXISTS T_VULNERABILITY_EXPLOITS;
+
+CREATE TABLE T_VULNERABILITY_EXPLOITS
+AS
+SELECT	
+	cpevuln.cpeid,
+	TE.exploit_cnt,
+	TE.remote_exploit_cnt,
+	TE.local_exploit_cnt,
+	TE.WEBAPPS_EXPLOIT_TYPE_cnt,
+	TE.DOS_EXPLOIT_TYPE_cnt,
+	TE.SHELLCODE_EXPLOIT_TYPE_cnt,
+	cpevuln.cveid_cnt,
+	cpevuln.cvss_base_sum,
+	cpevuln.cvss_impact_sum,
+	cpevuln.cvss_exploit_sum,
+	cpevuln.network_access_sum,
+	cpevuln.local_access_sum,
+	cpevuln.adjacent_network_access_sum,
+	cpevuln.not_defined_network_access_sum,
+	cpevuln.low_access_complexity_sum,
+	cpevuln.medium_access_complexity_sum,
+	cpevuln.high_access_complexity_sum,
+	cpevuln.not_defined_access_complexity_sum,
+	cpevuln.none_cvss_authentication_sum,
+	cpevuln.single_instance_cvss_authentication_sum,
+	cpevuln.not_defined_instance_cvss_authentication_sum,
+	cpevuln.multiple_instance_cvss_authentication_sum,
+	cpevuln.partial_confiidentiality_impact_sum,
+	cpevuln.none_confiidentiality_impact_sum,
+	cpevuln.complete_confiidentiality_impact_sum,
+	cpevuln.not_defined_confiidentiality_impact_sum,
+	cpevuln.not_defined_cvss_integrity_impact_sum,
+	cpevuln.none_cvss_integrity_impact_sum,
+	cpevuln.complete_cvss_integrity_impact_sum,
+	cpevuln.partial_cvss_integrity_impact_sum,
+	cpevuln.not_defined_cvss_availability_impact_sum,
+	cpevuln.partial_cvss_availability_impact_sum,
+	cpevuln.complete_cvss_availability_impact_sum,
+	cpevuln.none_cvss_availability_impact_sum
+FROM T_cpe_vulnerability_agg cpevuln LEFT JOIN T_exploit_cve_cpe_agg TE 
+on cpevuln.cpeid=TE.cpeid
+;
+
+
+DROP TABLE IF EXISTS T_nvd_part_2;
+
+CREATE TABLE T_nvd_part_2
+AS
+SELECT * FROM  T_VULNERABILITY_EXPLOITS WHERE cpeid in (SELECT CPE FROM data_NVD_Supplementary);
+
+
+
+/*
+"none"
+"single_instance"
+"not_defined"
+"multiple_instances"
+*/
+
+
+SELECT DISTINCT(cvss_access_vector) FROM nvd_db;
+
+/*
+"network"
+"local"
+"adjacent_network"
+"not_defined"
+*/
+
+--cvss_access_complexity
+/*
+"low"
+"medium"
+"high"
+"not_defined"
+
+*/
+SELECT DISTINCT(cvss_access_complexity) FROM nvd_db;
+
+
+
+--cvss_authentication,
+SELECT DISTINCT(cvss_authentication) FROM nvd_db;
+/*
+"none"
+"single_instance"
+"not_defined"
+"multiple_instances"
+*/
+
+--cvss_confidentiality_impact
+SELECT DISTINCT(cvss_confidentiality_impact) FROM nvd_db;
+/*
+"partial"
+"none"
+"complete"
+"not_defined"
+*/
+
+--cvss_integrity_impact
+SELECT DISTINCT(cvss_integrity_impact) FROM nvd_db;
+/*
+"partial"
+"none"
+"complete"
+"not_defined"
+*/
+
+--cvss_availability_impact
+SELECT DISTINCT(cvss_availability_impact) FROM nvd_db;
+/*
+"partial"
+"none"
+"complete"
+"not_defined"
+*/

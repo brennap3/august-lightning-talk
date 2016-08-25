@@ -1,0 +1,48 @@
+CREATE VIEW Count_Exploits_By_Product
+AS
+	SELECT 
+	cpeid
+	, count_exploits
+	FROM cve_cpe
+	LEFT JOIN V_Exploit_Count
+		ON V_Exploit_Count.cveid=cve_cpe.cveid;
+		
+CREATE VIEW Total_Count_Exploits_By_Product
+AS
+	SELECT 
+	cpeid
+	,sum(count_exploits) AS Total_Count_Exploits_By_Product 
+FROM Count_Exploits_By_Product
+	GROUP BY cpeid;
+	
+CREATE VIEW V_Exploit_Count
+AS
+	SELECT
+		count(exploitdbid) AS count_exploits
+		,cveid
+		FROM map_cve_exploitdb
+	GROUP BY cveid;	
+	
+CREATE VIEW V_vFeed
+            AS
+SELECT
+            nvd_db.cveid,
+            nvd_db.date_published,
+            nvd_db.date_modified,
+            nvd_db.summary,
+            nvd_db.cvss_base,
+            nvd_db.cvss_impact,
+            nvd_db.cvss_exploit,
+            nvd_db.cvss_access_vector,
+            nvd_db.cvss_access_complexity,
+            nvd_db.cvss_authentication,
+            nvd_db.cvss_confidentiality_impact,
+            nvd_db.cvss_integrity_impact,
+            nvd_db.cvss_availability_impact,
+            cve_cpe.cpeid
+            FROM nvd_db AS nvd_db
+            LEFT JOIN cve_cpe
+            ON cve_cpe.cveid=nvd_db.cveid;
+			
+			
+			

@@ -1,0 +1,14 @@
+Version,Parent tech,Branch,Users,Netcraft perc,Netcraft stat,Corrected Version Usage,Date collected,Url,Secondary URL
+IIS 8,IIS,,"4,723,381",11,27.1300,2.8594,16/08/2016,http://trends.builtwith.com/Web-Server/IIS,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+IIS 7,IIS,,"34,222,501",76,27.1300,20.7175,16/08/2016,http://trends.builtwith.com/Web-Server/IIS,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+IIS 6,IIS,,"5,730,807",13,27.1300,3.4693,16/08/2016,http://trends.builtwith.com/Web-Server/IIS,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+IIS 5,IIS,,138475,0,27.1300,0.0838,16/08/2016,http://trends.builtwith.com/Web-Server/IIS,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+Apache 2.2,Apache,,,61.1,47.8900,29.2608,16/08/2016,https://w3techs.com/technologies/details/ws-apache/2/all,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+Apache 2.4,Apache,,,37.2,47.8900,17.8151,16/08/2016,https://w3techs.com/technologies/details/ws-apache/2/all,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+Apache 2.0,Apache,,,1.6,47.8900,0.7662,16/08/2016,https://w3techs.com/technologies/details/ws-apache/2/all,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+nginx 1.9,nginx,,"351,874",7.101706412,13.7000,0.9729,16/08/2016,http://trends.builtwith.com/Web-Server/nginx,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+nginx 1.8,nginx,,1071669,21.62898824,13.7000,2.9632,16/08/2016,http://trends.builtwith.com/Web-Server/nginx,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+nginx 1.6,nginx,,2625348,52.9861562,13.7000,7.2591,16/08/2016,http://trends.builtwith.com/Web-Server/nginx,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+nginx 1.5,nginx,,175461,3.541246324,13.7000,0.4852,16/08/2016,http://trends.builtwith.com/Web-Server/nginx,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+nginx 1.4,nginx,,723446,14.60096824,13.7000,2.0003,16/08/2016,http://trends.builtwith.com/Web-Server/nginx,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html
+nginx 1.3,nginx,,6983,0.140934584,13.7000,0.0193,16/08/2016,http://trends.builtwith.com/Web-Server/nginx,http://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html

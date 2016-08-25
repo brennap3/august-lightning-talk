@@ -1,0 +1,75 @@
+Software,Software type,Open_Closed_Src,cpe:/a:apache:solr:5.3,Release,Mainstream Support End,Extended Support End,Db-eng ref,Source ,Secondary Source
+Mac OS X 10.11,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.11.0,Sep-15,TBD,TBD,,,
+Mac OS X 10.10,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.10.0,Oct-14,TBD,TBD,,,
+Mac OS X 10.9,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.9,Oct-13,TBD,TBD,,,
+Mac OS X 10.7,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.7.0,Oct-12,Oct-14,Oct-14,,,
+Mac OS X 10.8,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.8.0,Jul-12,Jan-16,Jan-16,,,
+Windows 3.1,OS_desktop,CS,cpe:/o:microsoft:windows-nt:3.1,Apr-92,Dec-01,Dec-01,,,
+Mac OS X 10.6,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.6.0,Aug-09,Feb-14,,,,
+Mac OS X 10.5,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.5.0,Oct-07,Jun-11,,,Wikipedia/carnegie melon,
+Windows 2000,OS_desktop,CS,cpe:/o:microsoft:windows-nt:2000:sp4,Feb-00,Jun-05,Jul-10,,,
+Windows 7,OS_desktop,CS,cpe:/o:microsoft:windows_7:-:-:x64,Jul-09,Jan-15,Jan-20,,,
+Windows 8.1,OS_desktop,CS,cpe:/o:microsoft:windows_8.1:-:-:~-~-~-~x64~,Aug-13,Jan-18,Jan-23,,,
+Windows XP,OS_desktop,CS,cpe:/o:microsoft:windows_xp::sp3,Aug-01,Apr-09,Apr-14,,,
+Windows 10,OS_desktop,CS,cpe:/o:microsoft:windows_10,Jul-15,Oct-20,Oct-25,,,
+Windows Vista,OS_desktop,CS,cpe:/o:microsoft:windows_vista,Jan-07,Apr-12,Apr-17,,,
+Oracle,Database,CS,cpe:/a:oracle:database:12.1.0.2,Jul-14,Jul-18,Jul-21,Oracle 12 Release 1,DB-engines,http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf
+MySQL,Database,OS,cpe:/a:oracle:mysql:5.7.11,Oct-15,Oct-20,Oct-23,"MySQL 5.7.14, 5.7.11",DB-engines,
+Microsoft SQL Server,Database,CS,cpe:/a:microsoft:sql_server:2014,Apr-14,Sep-19,Jul-24,"SQL Server 2016, 2014 Mjor model in use",DB-engines,https://support.microsoft.com/en-us/lifecycle?C2=1044
+MongoDB,Database,OS,cpe:/a:mongodb:mongodb:3.2.8,Jul-16,TBD,TBD,3.2.8,DB-engines,https://www.mongodb.com/support-policy
+PostgreSQL,Database,OS,cpe:/a:postgresql:postgresql:9.5.1,May-16,Jan-21,Jan-21,9.5.3,DB-engines,https://www.postgresql.org/support/versioning/
+DB2,Database,CS,cpe:/a:ibm:db2:10.5.0.7,Jun-13,TBD,TBD,DB2 Data Server (11.1),DB-engines,http://www-01.ibm.com/support/docview.wss?uid=swg21168270
+Cassandra,Database,CS,cpe:/a:apache:cassandra:3.7,Jun-16,,,3.7,DB-engines,
+Microsoft Access,Database,CS,cpe:/a:microsoft:access:2013:sp1,Sep-15,Oct-20,Oct-25,15.04229.1024,DB-engines,
+SQLite,Database,OS,cpe:/a:sqlite:sqlite:3.8.10.1,Jul-15,,,3.8,DB-engines,http://www.sqlite.org/changes.html
+Redis,Database,OS,cpe:/a:pivotal_software:redis:3.0.5,Oct-15,TBD,TBD,3.2.3,DB-engines,https://ius.io/LifeCycle/
+Elastic,Database,OS,cpe:/a:elasticsearch:elasticsearch:2.3.5,Aug-16,,,2.3.5,DB-engines,
+Teradata,Database,CS,,,,,15,DB-engines,http://www.simba.com/blog/teradata-15-0-major-new-release-integrating-hadoop/
+Solr,Database,OS,cpe:/a:apache:solr:6.1,Jun-16,,,6.1,,
+Hbase,Database,OS,cpe:/a:apache:hbase:1.2.2,Jul-16,,,1.2.2,,
+Filemaker,Database,CS,cpe:/a:filemaker:filemaker_pro_advanced:15.0.1,May-16,,,15.0.1,,
+Firefox 47,Browser,OS,cpe:/a:mozilla:firefox:47.0,May-16,,,45,https://en.wikipedia.org/wiki/Firefox_release_history#Firefox_48.0,
+Chrome 51.0,Browser,OS,cpe:/a:google:chrome:51.0,May-16,,,,,
+Microsoft Internet explorer 11.0,Browser,CS,cpe:/a:microsoft:internet_explorer:11,Oct-13,Oct-20,Oct-20,,https://www.google.ie/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=Internet+explorer+11+wiki,
+Chrome 45.0,Browser,OS,cpe:/a:google:chrome:45.0.2454.101,Sep-15,,,,,
+Microsoft Internet explorer 8.0,Browser,CS,cpe:/a:microsoft:internet_explorer:8.0.7100.0,Mar-09,Jan-16,Jan-16,,https://support.microsoft.com/en-us/lifecycle/search?sort=PN&alpha=internet%20explorer,
+Microsoft edge 13,Browser,CS,cpe:/a:microsoft:edge:13,May-15,,,,,
+Chrome 49,Browser,OS,cpe:/a:google:chrome:49.0.2623.112,Mar-16,,,,https://en.wikipedia.org/wiki/Google_Chrome_release_history,
+Microsoft Internet Explorer 9.0,Browser,CS,cpe:/a:microsoft:internet_explorer:9,Mar-11,Jan-16,Jan-16,,https://en.wikipedia.org/wiki/Internet_Explorer_9,
+Safari 9.1,Browser,OS,cpe:/a:apple:safari:9.1,Mar-16,,,,https://en.wikipedia.org/wiki/Safari_version_history,
+Microsoft Internet Explorer 10.0,Browser,CS,cpe:/a:microsoft:internet_explorer:10,Sep-12,Jan-16,Jan-16,,https://en.wikipedia.org/wiki/Internet_Explorer_10,
+Chrome 50.0,Browser,OS,cpe:/a:google:chrome:50.0,Apr-16,,,,,
+Chrome 47.0,Browser,OS,cpe:/a:google:chrome:47.0.2526.111,Dec-15,,,,,
+Chrome 52.0,Browser,OS,cpe:/a:google:chrome:52.0,Jul-16,,,,,
+Microsoft Internet Explorer 7.0,Browser,CS,cpe:/a:microsoft:internet_explorer:7.0.5730,Oct-06,Jan-16,Jan-16,,https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support,
+Opera 38,Browser,OS,cpe:/a:opera_software:opera_web_browser:38.0,Jun-16,,,,https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support,
+Chrome 38.0,Browser,OS,cpe:/a:google:chrome:38.0.2125.7,Oct-14,,,,https://en.wikipedia.org/wiki/Google_Chrome_release_history,
+Chrome 43.0,Browser,OS,cpe:/a:google:chrome:43.0.2357.134,May-15,,,,,
+Chrome 36.0,Browser,OS,cpe:/a:google:chrome:36.0.1985.99,Jul-15,,,,,
+Chrome 48.0,Browser,OS,cpe:/a:google:chrome:48.0.2564.116,Jan-16,,,,,
+Chrome 42.0,Browser,OS,cpe:/a:google:chrome:42.0.2311.87,Apr-15,,,,,
+Microsoft Edge 12,Browser,CS,cpe:/a:microsoft:edge:12,Mar-15,,,,,
+Safari 9.0,Browser,CS,cpe:/a:apple:safari:9.0,Sep-15,,,,,
+Android 4.2,Mobile/tablet OS,OS,cpe:/o:google:android:4.2,Jul-12,TBD,TBD,,https://en.wikipedia.org/wiki/Android_version_history,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+Android 5.0,Mobile/tablet OS,OS,cpe:/o:google:android:5.0.2,Nov-14,TBD,TBD,,https://en.wikipedia.org/wiki/Android_version_history,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+Android 6.0,Mobile/tablet OS,OS,cpe:/o:google:android:6.0,Oct-15,TBD,TBD,,https://en.wikipedia.org/wiki/Android_version_history,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+Android 4.4,Mobile/tablet OS,OS,cpe:/o:google:android:4.4.4,Oct-13,TBD,TBD,,https://en.wikipedia.org/wiki/Android_version_history,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+Android 5.1,Mobile/tablet OS,OS,cpe:/o:google:android:5.1.0,Oct-15,TBD,TBD,,https://en.wikipedia.org/wiki/Android_version_history,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 10.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:10.0,Aug-16,TBD,TBD,,https://en.wikipedia.org/wiki/IOS_version_history#Version_history:_iPhone.2C_iPad.2C_and_iPod_Touch,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 9.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:9.2.1,Sep-15,TBD,TBD,,https://en.wikipedia.org/wiki/IOS_version_history#Version_history:_iPhone.2C_iPad.2C_and_iPod_Touch,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 8.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:8.4.1,Sep-14,TBD,TBD,,https://en.wikipedia.org/wiki/IOS_version_history#Version_history:_iPhone.2C_iPad.2C_and_iPod_Touch,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 7.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:7.1.2,Sep-13,TBD,TBD,,https://en.wikipedia.org/wiki/IOS_version_history#Version_history:_iPhone.2C_iPad.2C_and_iPod_Touch,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 6.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:6.1.5,Sep-12,Sep-15,Sep-15,,https://en.wikipedia.org/wiki/IOS_version_history#Version_history:_iPhone.2C_iPad.2C_and_iPod_Touch,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 5.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:5.1.1,Jun-11,Jan-13,Jan-13,,https://en.wikipedia.org/wiki/IOS_5,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 4.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:4.3.5,Jun-10,Jan-13,Jan-13,,https://en.wikipedia.org/wiki/IOS_4,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+Win /phone/tab,Mobile/tablet OS,CS,,,,,,,
+Mint,Linux- OS,OS,cpe:/o:linuxmint:linux_mint:17.3,Jan-16,Apr-17,Apr-17,,https://en.wikipedia.org/wiki/List_of_Linux_Mint_releases,All based on 14.04
+Debian,Linux- OS,OS,cpe:/o:debian:debian_linux:8.0,Apr-15,Jun-18,,,,
+Ubuntu,Linux- OS,OS,cpe:/o:canonical:ubuntu_linux:16.04::~~lts~~~,Jul-16,,,,https://wiki.ubuntu.com/Releases,
+openSUSE,Linux- OS,OS,cpe:/o:novell:opensuse:13.2,Oct-14,Mar-17,,,https://en.wikipedia.org/wiki/SUSE_Linux_distributions#The_openSUSE_Project,
+Fedora,Linux- OS,OS,cpe:/o:fedoraproject:fedora:24,Jun-16,,,,https://en.wikipedia.org/wiki/Fedora_(operating_system)#Releases,
+Manjaro,Linux- OS,OS,,,,,,,
+CentOS,Linux- OS,OS,cpe:/o:centos:centos:7.1,Aug-15,,,,https://en.wikipedia.org/wiki/CentOS,
+Mageia,Linux- OS,OS,,,,,,,
+Arch,Linux- OS,OS,,,,,,,
+Zorin,Linux- OS,OS,,,,,,,

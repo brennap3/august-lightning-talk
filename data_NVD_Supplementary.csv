@@ -1,0 +1,88 @@
+Software,Software type,Open_Closed_Src,cpe:/a:apache:solr:5.3,Release(to start of release month),Mainstream Support End,Extended Support End,Db-eng ref,Source ,Secondary Source
+Mac OS X 10.11,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.11.0,01/09/2015,TBD,TBD,,,
+Mac OS X 10.10,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.10.0,01/10/2014,TBD,TBD,,,
+Mac OS X 10.9,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.9,01/10/2013,TBD,TBD,,,
+Mac OS X 10.7,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.7.0,01/10/2012,01/10/2014,01/10/2014,,,
+Mac OS X 10.8,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.8.0,01/07/2012,01/01/2016,01/01/2016,,,
+Windows 3.1,OS_desktop,CS,cpe:/o:microsoft:windows-nt:3.1,01/04/1992,01/12/2001,01/12/2001,,,
+Mac OS X 10.6,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.6.0,01/08/2009,01/02/2014,,,,
+Mac OS X 10.5,OS_desktop,CS,cpe:/o:apple:mac_os_x:10.5.0,01/10/2007,01/06/2011,,,Wikipedia/carnegie melon,
+Windows 2000,OS_desktop,CS,cpe:/o:microsoft:windows-nt:2000:sp4,01/02/2000,01/06/2005,01/07/2010,,,
+Windows 7,OS_desktop,CS,cpe:/o:microsoft:windows_7:-:-:x64,01/07/2009,01/01/2015,01/01/2020,,,
+Windows 8.1,OS_desktop,CS,cpe:/o:microsoft:windows_8.1:-:-:~-~-~-~x64~,01/08/2013,01/01/2018,01/01/2023,,,
+Windows XP,OS_desktop,CS,cpe:/o:microsoft:windows_xp::sp3,01/08/2001,01/04/2009,01/04/2014,,,
+Windows 10,OS_desktop,CS,cpe:/o:microsoft:windows_10,01/07/2015,01/10/2020,01/10/2025,,,
+Windows Vista,OS_desktop,CS,cpe:/o:microsoft:windows_vista,01/01/2007,01/04/2012,01/04/2017,,,
+Oracle,Database,CS,cpe:/a:oracle:database:12.1.0.2,01/07/2014,01/07/2018,01/07/2021,Oracle 12 Release 1,DB-engines,http://www.oracle.com/us/support/library/lifetime-support-technology-069183.pdf
+MySQL,Database,OS,cpe:/a:oracle:mysql:5.7.11,01/10/2015,01/10/2020,01/10/2023,"MySQL 5.7.14, 5.7.11",DB-engines,
+Microsoft SQL Server,Database,CS,cpe:/a:microsoft:sql_server:2014,01/04/2014,01/09/2019,01/07/2024,"SQL Server 2016, 2014 Mjor model in use",DB-engines,https://support.microsoft.com/en-us/lifecycle?C2=1044
+MongoDB,Database,OS,cpe:/a:mongodb:mongodb:3.2.8,01/07/2016,TBD,TBD,3.2.8,DB-engines,https://www.mongodb.com/support-policy
+PostgreSQL,Database,OS,cpe:/a:postgresql:postgresql:9.5.1,01/05/2016,01/01/2021,01/01/2021,9.5.3,DB-engines,https://www.postgresql.org/support/versioning/
+DB2,Database,CS,cpe:/a:ibm:db2:10.5.0.7,01/06/2013,TBD,TBD,DB2 Data Server (11.1),DB-engines,http://www-01.ibm.com/support/docview.wss?uid=swg21168270
+Cassandra,Database,CS,cpe:/a:apache:cassandra:3.7,01/06/2016,,,3.7,DB-engines,
+Microsoft Access,Database,CS,cpe:/a:microsoft:access:2013:sp1,01/09/2015,01/10/2020,01/10/2025,15.04229.1024,DB-engines,
+SQLite,Database,OS,cpe:/a:sqlite:sqlite:3.8.10.1,01/07/2015,,,3.8,DB-engines,http://www.sqlite.org/changes.html
+Redis,Database,OS,cpe:/a:pivotal_software:redis:3.0.5,01/10/2015,TBD,TBD,3.2.3,DB-engines,https://ius.io/LifeCycle/
+Elastic,Database,OS,cpe:/a:elasticsearch:elasticsearch:2.3.5,01/08/2016,,,2.3.5,DB-engines,
+Teradata,Database,CS,cpe:/a:teradata:12.1,,,,15,DB-engines,http://www.simba.com/blog/teradata-15-0-major-new-release-integrating-hadoop/
+Solr,Database,OS,cpe:/a:apache:solr:6.1,01/06/2016,,,6.1,,
+Hbase,Database,OS,cpe:/a:apache:hbase:1.2.2,01/07/2016,,,1.2.2,,
+Filemaker,Database,CS,cpe:/a:filemaker:filemaker_pro_advanced:15.0.1,01/05/2016,,,15.0.1,,
+Firefox 47,Browser,OS,cpe:/a:mozilla:firefox:47.0,01/05/2016,,,45,https://en.wikipedia.org/wiki/Firefox_release_history#Firefox_48.0,
+Chrome 51.0,Browser,OS,cpe:/a:google:chrome:51.0,01/05/2016,,,,,
+Microsoft Internet explorer 11.0,Browser,CS,cpe:/a:microsoft:internet_explorer:11,01/10/2013,01/10/2020,01/10/2020,,https://www.google.ie/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=Internet+explorer+11+wiki,
+Chrome 45.0,Browser,OS,cpe:/a:google:chrome:45.0.2454.101,01/09/2015,,,,,
+Microsoft Internet explorer 8.0,Browser,CS,cpe:/a:microsoft:internet_explorer:8.0.7100.0,01/03/2009,01/01/2016,01/01/2016,,https://support.microsoft.com/en-us/lifecycle/search?sort=PN&alpha=internet%20explorer,
+Microsoft edge 13,Browser,CS,cpe:/a:microsoft:edge:13,01/05/2015,,,,,
+Chrome 49,Browser,OS,cpe:/a:google:chrome:49.0.2623.112,01/03/2016,,,,https://en.wikipedia.org/wiki/Google_Chrome_release_history,
+Microsoft Internet Explorer 9.0,Browser,CS,cpe:/a:microsoft:internet_explorer:9,01/03/2011,01/01/2016,01/01/2016,,https://en.wikipedia.org/wiki/Internet_Explorer_9,
+Safari 9.1,Browser,OS,cpe:/a:apple:safari:9.1,01/03/2016,,,,https://en.wikipedia.org/wiki/Safari_version_history,
+Microsoft Internet Explorer 10.0,Browser,CS,cpe:/a:microsoft:internet_explorer:10,01/09/2012,01/01/2016,01/01/2016,,https://en.wikipedia.org/wiki/Internet_Explorer_10,
+Chrome 50.0,Browser,OS,cpe:/a:google:chrome:50.0,01/04/2016,,,,,
+Chrome 47.0,Browser,OS,cpe:/a:google:chrome:47.0.2526.111,01/12/2015,,,,,
+Chrome 52.0,Browser,OS,cpe:/a:google:chrome:52.0,01/07/2016,,,,,
+Microsoft Internet Explorer 7.0,Browser,CS,cpe:/a:microsoft:internet_explorer:7.0.5730,01/10/2006,01/01/2016,01/01/2016,,https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support,
+Opera 38,Browser,OS,cpe:/a:opera_software:opera_web_browser:38.0,01/06/2016,,,,https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support,
+Chrome 38.0,Browser,OS,cpe:/a:google:chrome:38.0.2125.7,01/10/2014,,,,https://en.wikipedia.org/wiki/Google_Chrome_release_history,
+Chrome 43.0,Browser,OS,cpe:/a:google:chrome:43.0.2357.134,01/05/2015,,,,,
+Chrome 36.0,Browser,OS,cpe:/a:google:chrome:36.0.1985.99,01/07/2015,,,,,
+Chrome 48.0,Browser,OS,cpe:/a:google:chrome:48.0.2564.116,01/01/2016,,,,,
+Chrome 42.0,Browser,OS,cpe:/a:google:chrome:42.0.2311.87,01/04/2015,,,,,
+Microsoft Edge 12,Browser,CS,cpe:/a:microsoft:edge:12,01/03/2015,,,,,
+Safari 9.0,Browser,CS,cpe:/a:apple:safari:9.0,01/09/2015,,,,,
+Android 4.2,Mobile/tablet OS,OS,cpe:/o:google:android:4.2.2,01/07/2012,TBD,TBD,,https://en.wikipedia.org/wiki/Android_version_history,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+Android 5.0,Mobile/tablet OS,OS,cpe:/o:google:android:5.0.2,01/11/2014,TBD,TBD,,https://en.wikipedia.org/wiki/Android_version_history,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+Android 6.0,Mobile/tablet OS,OS,cpe:/o:google:android:6.0.1,01/10/2015,TBD,TBD,,https://en.wikipedia.org/wiki/Android_version_history,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+Android 4.4,Mobile/tablet OS,OS,cpe:/o:google:android:4.4.4,01/10/2013,TBD,TBD,,https://en.wikipedia.org/wiki/Android_version_history,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+Android 5.1,Mobile/tablet OS,OS,cpe:/o:google:android:5.1.1,01/10/2015,TBD,TBD,,https://en.wikipedia.org/wiki/Android_version_history,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 10.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:10.0,01/08/2016,TBD,TBD,,https://en.wikipedia.org/wiki/IOS_version_history#Version_history:_iPhone.2C_iPad.2C_and_iPod_Touch,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 9.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:9.2.1,01/09/2015,TBD,TBD,,https://en.wikipedia.org/wiki/IOS_version_history#Version_history:_iPhone.2C_iPad.2C_and_iPod_Touch,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 8.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:8.4.1,01/09/2014,TBD,TBD,,https://en.wikipedia.org/wiki/IOS_version_history#Version_history:_iPhone.2C_iPad.2C_and_iPod_Touch,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 7.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:7.1.2,01/09/2013,TBD,TBD,,https://en.wikipedia.org/wiki/IOS_version_history#Version_history:_iPhone.2C_iPad.2C_and_iPod_Touch,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 6.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:6.1.5,01/09/2012,01/09/2015,01/09/2015,,https://en.wikipedia.org/wiki/IOS_version_history#Version_history:_iPhone.2C_iPad.2C_and_iPod_Touch,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 5.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:5.1.1,01/06/2011,01/01/2013,01/01/2013,,https://en.wikipedia.org/wiki/IOS_5,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+ios 4.X,Mobile/tablet OS,CS,cpe:/o:apple:iphone_os:4.3.5,01/06/2010,01/01/2013,01/01/2013,,https://en.wikipedia.org/wiki/IOS_4,http://alohahsap.org/SMARTERBALANCED/wp-content/uploads/HSAP_Operating_System_Support_Plan_2015-2016.pdf
+Win /phone/tab,Mobile/tablet OS,CS,,,,,,,
+Mint,Linux- OS,OS,cpe:/o:linuxmint:linux_mint:17.3,01/01/2016,01/04/2017,01/04/2017,,https://en.wikipedia.org/wiki/List_of_Linux_Mint_releases,All based on Ubuntu 14.04
+Debian,Linux- OS,OS,cpe:/o:debian:debian_linux:8.0,01/04/2015,01/06/2018,,,,
+Ubuntu,Linux- OS,OS,cpe:/o:canonical:ubuntu_linux:16.04::~~lts~~~,01/07/2016,,,,https://wiki.ubuntu.com/Releases,
+openSUSE,Linux- OS,OS,cpe:/o:novell:leap:42.1,01/11/2015,01/03/2017,,,https://en.wikipedia.org/wiki/SUSE_Linux_distributions#The_openSUSE_Project,
+Fedora,Linux- OS,OS,cpe:/o:fedoraproject:fedora:24,01/06/2016,,,,https://en.wikipedia.org/wiki/Fedora_(operating_system)#Releases,https://fedoraproject.org/wiki/Releases
+Manjaro,Linux- OS,OS,,,,,,,
+CentOS,Linux- OS,OS,cpe:/o:centos:centos:7.1,01/08/2015,,,,https://en.wikipedia.org/wiki/CentOS,
+Mageia,Linux- OS,OS,,,,,,,
+Arch,Linux- OS,OS,,,,,,,
+Zorin,Linux- OS,OS,,,,,,,
+IIS 8,Web-server,CS,cpe:/a:microsoft:iis:8.0,01/09/2012,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://en.wikipedia.org/wiki/Internet_Information_Services,,https://en.wikipedia.org/wiki/Internet_Information_Services,
+IIS 7,Web-server,CS,cpe:/a:microsoft:iis:7.5,01/08/2009,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://en.wikipedia.org/wiki/Internet_Information_Services,,https://en.wikipedia.org/wiki/Internet_Information_Services,
+IIS 6,Web-server,CS,cpe:/a:microsoft:iis:6.0,01/04/2003,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://en.wikipedia.org/wiki/Internet_Information_Services,,https://en.wikipedia.org/wiki/Internet_Information_Services,
+IIS 5,Web-server,CS,cpe:/a:microsoft:iis:5.1,01/02/2000,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://en.wikipedia.org/wiki/Internet_Information_Services,,https://en.wikipedia.org/wiki/Internet_Information_Services,
+Apache 2.2,Web-server,OS,cpe:/a:apache:http_server:2.2.9,01/07/2009,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://www.openhub.net/p/apache,,,
+Apache 2.4,Web-server,OS,cpe:/a:apache:http_server:2.4.20,01/04/2016,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://www.openhub.net/p/apache,,,
+Apache 2.0,Web-server,OS,cpe:/a:apache:http_server:2.0.64,01/10/2010,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://www.openhub.net/p/apache,,,
+nginx 1.9,Web-server,OS,cpe:/a:nginx:nginx:1.9.9,01/12/2015,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://www.openhub.net/p/nginx,,,
+nginx 1.8,Web-server,OS,cpe:/a:nginx:nginx:1.8.0,01/04/2015,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://www.openhub.net/p/nginx,,,
+nginx 1.6,Web-server,OS,cpe:/a:nginx:nginx:1.6.1,01/08/2014,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://www.openhub.net/p/nginx,,,
+nginx 1.5,Web-server,OS,cpe:/a:nginx:nginx:1.5.9,01/01/2014,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://www.openhub.net/p/nginx,,,
+nginx 1.4,Web-server,OS,cpe:/a:nginx:nginx:1.4.3,01/10/2013,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://www.openhub.net/p/nginx,,,
+nginx 1.3,Web-server,OS,cpe:/a:nginx:nginx:1.3.9,01/11/2012,https://news.netcraft.com/archives/2016/02/22/february-2016-web-server-survey.html,https://www.openhub.net/p/nginx,,,
